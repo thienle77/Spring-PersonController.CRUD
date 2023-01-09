@@ -12,7 +12,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    Integer id;
 
     public String getFirstName(){
         return firstName;
@@ -30,11 +30,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Long getId(){
+    public int getId(){
         return id;
     }
 
-    public void setId(Long id){
+    public void setId(int id){
         this.id = id;
     }
 
